@@ -15,7 +15,7 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      - mvn -s settings.xml package
+      - mvn -s settings.xml clean package
 artifacts:
   files:
     - target/devops.war
